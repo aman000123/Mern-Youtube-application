@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "start:node": "node app.js"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "add": "^2.0.6",
