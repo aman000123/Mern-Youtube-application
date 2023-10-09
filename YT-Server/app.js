@@ -12,7 +12,7 @@ const authRouter = require('./routes/authentication');
 
 const cors = require("cors")
 const app = express();
-
+const PORT =  process.env.PORT || 4004
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -66,7 +66,7 @@ const connect = () => {
 
 
 
-app.listen(4004, () => {
+app.listen(PORT, () => {
     connect(),
         console.log("Connected at 4004 port")
 })
