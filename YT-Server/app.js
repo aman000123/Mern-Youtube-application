@@ -64,10 +64,22 @@ const connect = () => {
         });
 }
 
+mongoose.connect(`mongodb+srv://aman:aman9616223392@cluster0.rr10twt.mongodb.net/Youtube?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => {
+    console.log('MongoDB is connected');
+})
+.catch((err) => {
+    console.error('MongoDB connection error:', err);
+});
+
+
 
 
 app.listen(PORT, () => {
-    connect(),
+   // connect(),
         console.log("Connected at 4004 port")
 })
 
